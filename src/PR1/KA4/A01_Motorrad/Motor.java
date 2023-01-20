@@ -15,7 +15,7 @@ public class Motor {
 
     public double getHubraum() {
         return hubraum;
-    }
+    }   //test
 
     public void gibInfo(){
 
