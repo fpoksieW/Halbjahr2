@@ -6,10 +6,10 @@ public class Reifen {
     private double profiltiefe;
     private String jahreszeit;
 
-    public Reifen(double durchmesser, double profiltiefe, String jahreszeit) {
-        this.durchmesser = durchmesser;
-        this.profiltiefe = profiltiefe;
-        this.jahreszeit = jahreszeit;
+    public Reifen(double pDurchmesser, double pProfiltiefe, String pJahreszeit) {
+        this.durchmesser = pDurchmesser;
+        this.profiltiefe = pProfiltiefe;
+        this.jahreszeit = pJahreszeit;
     }
 
     public double getDurchmesser() {
@@ -23,8 +23,13 @@ public class Reifen {
     public String getJahreszeit() {
         return jahreszeit;
     }
-    public void gibInfo(){
 
+    public void gibInfo(){
+        System.out.println("Reifen{" +
+                "durchmesser=" + durchmesser +
+                ", profiltiefe=" + profiltiefe +
+                ", jahreszeit='" + jahreszeit + '\'' +
+                '}');
     }
 
 }
