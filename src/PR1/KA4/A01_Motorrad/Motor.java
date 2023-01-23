@@ -15,7 +15,7 @@ public class Motor {
 
     public double getHubraum() {
         return hubraum;
-    }
+    }   //test
 
     public String gibInfo(){
         System.out.print("Leistung: " + this.getLeistung() + "\nHubraum: " + this.getHubraum());
