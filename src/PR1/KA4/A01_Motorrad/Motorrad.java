@@ -25,9 +25,13 @@ public class Motorrad {
     }
 
     public void getInfo(){
-        System.out.println("Motor: " + this.meinMotor.gibInfo()
-                         + "\nReifen vorne: " + this.getVorderReifen()
-                         + "\nReifen vorne: " + this.getHinterReifen());
+
+        System.out.println("Motor: ");
+        this.meinMotor.gibInfo();
+        System.out.println("\nReifen vorne: ");
+        this.getVorderReifen().gibInfo();
+        System.out.println("Reifen hinten: ");
+        this.getHinterReifen().gibInfo();
     }
 
 

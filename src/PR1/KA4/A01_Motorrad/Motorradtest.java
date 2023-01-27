@@ -7,6 +7,18 @@ public class Motorradtest {
         Reifen vorderReifen = new Reifen(16, 3.0, "Sommer");
         Reifen hinterReifen = new Reifen(16, 3.0, "Sommer");
 
-        //Motorrad motorrad1 = new Motorrad(1, 1, 1);
+        Motorrad harley = new Motorrad(hinterReifen, vorderReifen, myMotor);
+
+        Motorrad fatboy = new Motorrad(new Reifen(16, 3.0, "Sommer"),
+                    new Reifen(16, 3.0, "Sommer"),
+                    new Motor(36,1337.0));
+
+        harley.getInfo();
+
+        System.out.println("##############################");
+        System.out.println(fatboy.getHinterReifen().getDurchmesser());
+
+
+
     }
 }
