@@ -1,4 +1,4 @@
-package PR1.Nachhilfe.AufgabenPrivat;
+package PR1.KA4.A02_Rekursion;
 
 public class Fibonacci {
 
