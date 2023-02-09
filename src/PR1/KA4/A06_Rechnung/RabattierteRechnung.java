@@ -8,9 +8,5 @@ public class RabattierteRechnung extends Rechnung{
         super(gesamtbetrag, mehrwertsteuer);
         this.rabatt = rabatt;
     }
-
-    protected double bruttobetragBerechnen(){
-
-        return 1;
-    }
+    
 }

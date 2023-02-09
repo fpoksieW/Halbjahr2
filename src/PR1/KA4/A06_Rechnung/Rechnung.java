@@ -8,4 +8,8 @@ public class Rechnung {
         this.gesamtbetrag = gesamtbetrag;
         this.mehrwertsteuer = mehrwertsteuer;
     }
+
+    protected double bruttobetragBerechnen(){
+        return gesamtbetrag + gesamtbetrag * mehrwertsteuer;
+    }
 }
