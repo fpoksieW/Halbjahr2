@@ -3,13 +3,26 @@ package PR1.KA4.A03_Vererbung;
 public class Mitarbeiter {
 
 
-    private double gehalt;
-    private String vorname;
-    private String name;
+    protected double gehalt;
+    protected String vorname;
+    protected String name;
 
-    public void gehaltErhöhen(double betrag){
-        this.gehalt += betrag;
+
+    public Mitarbeiter() {
+
     }
+    public Mitarbeiter(double gehalt, String vorname, String name) {
+        this.gehalt = gehalt;
+        this.vorname = vorname;
+        this.name = name;
+    }
+
+
+
+
+    /*public void gehaltErhöhen(double betrag){
+        this.gehalt += betrag;
+    }*/
 
 
 
