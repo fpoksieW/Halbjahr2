@@ -10,4 +10,6 @@ public class Person {
     public void setNr(String nr) {
         this.nr = nr;
     }
+
+
 }
