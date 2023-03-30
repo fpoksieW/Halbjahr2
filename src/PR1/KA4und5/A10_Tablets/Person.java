@@ -11,5 +11,4 @@ public class Person {
         this.nr = nr;
     }
 
-
 }
