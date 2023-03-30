@@ -1,8 +1,6 @@
 package PR1.KA4und5.A17_Industrieroboter;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 
 public class Industrieroboter {
