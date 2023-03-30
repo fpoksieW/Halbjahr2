@@ -8,11 +8,14 @@ import java.util.List;
 public class Industrieroboter {
 
     private final int maxAnzahlWerkzeuge = 10;
+    ArrayList<Werkzeug> werkzeuge = new ArrayList<Werkzeug>();
 
     public Industrieroboter() {
+        for (int i = 0; i < maxAnzahlWerkzeuge; i++) {
+            werkzeuge.add(null);
+        }
     }
 
-    List<Werkzeug> werkzeuge = new ArrayList<Werkzeug>(Collections.nCopies(maxAnzahlWerkzeuge, null));
 
     public boolean werkzeugHinzufuegen(int platz, Werkzeug neuWerkzeug) {
         if (platz >= 0 && platz < maxAnzahlWerkzeuge && werkzeuge.get(platz) == null) {
