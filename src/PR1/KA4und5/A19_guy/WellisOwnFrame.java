@@ -14,11 +14,14 @@ public class WellisOwnFrame extends javax.swing.JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setLayout(new FlowLayout());
 
-        lb = new JLabel("Hello World");
+        lb = new JLabel("<html><h1>Hello World</html></h1>");
         this.add(lb);
 
 
     }
+    public WellisOwnFrame() throws HeadlessException { // Constructor
+        super();
 
+    }
 
 }
