@@ -36,7 +36,6 @@ public class Zahlenschloss extends javax.swing.JFrame implements ActionListener{
         }
 
         eingabe = sb.toString();
-
         if (eingabe.equals(code)){
             this.getContentPane().setBackground(Color.GREEN);
             zaehler++;
