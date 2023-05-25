@@ -3,6 +3,7 @@ package PR1.KA6.Text2;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
+import java.nio.charset.Charset;
 
 public class TextWriter {
 
@@ -10,6 +11,8 @@ public class TextWriter {
     private static String speicherort = "H:\\PR1\\text\\Demo_together-20230525\\test.txt";
 
     public static void main(String[] args) {
+
+        Charset charset = Charset.forName("UTF-8");
 
         try {
 
@@ -35,6 +38,7 @@ public class TextWriter {
                 sb.append(Math.sqrt(i));
                 sb.append("\n");
             }
+
             String ausgabe = sb.toString();
 
             //buffered Writer
