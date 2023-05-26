@@ -1,18 +1,16 @@
-package PR1.KA6.Text2;
+package PR1.KA6.WriteAB.Aufgabe1;
 
 import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
 
-public class TextWriter {
+public class A1 {
 
     //erstellen einer textdatei die im ordner H:\PR1\text\Demo_together-20230525\ gespeichert wird
-    private static String speicherort = "H:\\PR1\\text\\Demo_together-20230525\\test.txt";
+    private static String speicherort = "H:\\PR1\\text\\Demo_together-20230525\\Aufgabe1.txt";
 
     public static void main(String[] args) {
 
@@ -34,13 +32,13 @@ public class TextWriter {
 
 
             StringBuilder sb = new StringBuilder();
-            sb.append("******************************\n");
-            for (int i = 0; i <= 10; i++) {
+            sb.append("Gechwindigkeit [km/h]\t ca Anhalteweg[n]\n");
+            sb.append("-----------------------------\n");
+            for (int i = 10; i <= 100; i += 10) {
                 sb.append(i);
-                sb.append("\t");
-                sb.append(i * i);
-                sb.append("\t");
-                sb.append(Math.sqrt(i));
+                sb.append("\t\t\t\t");
+                int anhalteweg = ((i / 10) * 3) + ((i / 10) * (i / 10));
+                sb.append(anhalteweg);
                 sb.append("\n");
             }
 
