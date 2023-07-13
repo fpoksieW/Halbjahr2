@@ -30,7 +30,7 @@ public class DBTabelleLesen implements Daten {
 
     public static void leseTabelle ( Connection dbVerbindung ) {
 
-        String sQuery = "SELECT * FROM produkte";
+        String sQuery = "SELECT * FROM gerichte";
 
         try ( Statement stmt = dbVerbindung.createStatement() ) {
 

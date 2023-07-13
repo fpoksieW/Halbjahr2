@@ -15,7 +15,7 @@ public interface Daten {
     String port = "3306";
 
     // Datenbankbanke
-    String db = "fastfoodtool";
+    String db = "FastFoodTool";
 
     // Datenbankzugangsdaten
     String user = "root";

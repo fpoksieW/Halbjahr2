@@ -21,7 +21,7 @@ public class Gericht {
 
     public static List<Gericht> arrayErstellen (Connection dbVerbindung ) {
 
-        String sQuery = "SELECT * FROM produkte";
+        String sQuery = "SELECT * FROM gerichte";
         List<Gericht> gerichte = new ArrayList<Gericht>();
 
         try ( Statement stmt = dbVerbindung.createStatement() ) {
